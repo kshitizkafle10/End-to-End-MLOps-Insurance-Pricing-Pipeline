@@ -1,0 +1,29 @@
+{
+  "features": {
+    "age": 37,
+    "gender": "Male",
+    "marital_status": "Married",
+    "employment_status": "Retired",
+    "income": 49226,
+    "region": "Edinburgh",
+    "postcode_risk_score": 0.8445902169908287,
+    "car_make": "Volkswagen",
+    "car_model": "ModelC",
+    "car_year": 2008,
+    "car_value": 20628,
+    "mileage_per_year": 24050,
+    "years_licensed": 20,
+    "past_accidents": 1,
+    "past_claims": 0,
+    "speeding_violations": 1,
+    "driving_record_score": 0.85,
+    "previous_insurer": "Aviva",
+    "years_with_previous_insurer": 7,
+    "previous_premium": 420.5828890698882,
+    "coverage_type": "Comprehensive",
+    "no_claim_bonus": 0.1161631837943302,
+    "loyalty_score": 0.2945609156777194,
+    "web_visits_last_30_days": 2,
+    "clicked_marketing_email": 0
+  }
+}
