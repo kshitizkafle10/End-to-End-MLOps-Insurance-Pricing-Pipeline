@@ -30,8 +30,14 @@ def health() -> dict[str, str]:
 @app.post("/predict", response_model=PredictResponse)
 def predict(req: PredictRequest) -> PredictResponse:
     X = pd.DataFrame([req.features])
+
+    # Cast all integer columns to float to satisfy MLflow schema (double)
+    int_cols = X.select_dtypes(include=["int", "int64", "int32"]).columns
+    X[int_cols] = X[int_cols].astype("float64")
+
     pred = float(model.predict(X)[0])
     return PredictResponse(prediction=pred)
+
 
 @app.get("/")
 def root():
